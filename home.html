@@ -5,13 +5,10 @@
  var x = document.cookie;
   console.log(x);
   if (x === ""){
-    var a = 1 ;
-    document.cookie = a ; "expires=Thu, 19 Nov 2020 12:00:01 UTC";
-  }else{
-    var a = parseInt(x)
-    document.cookie = a ; "expires=Thu, 19 Nov 2020 12:00:01 UTC";
-    }
-  document.write("hello, this is you " , a , " vist");
+    var x = promp("what is your name");
+    document.cookie = x ; "expires=Thu, 19 Nov 2020 12:00:01 UTC";
+  }
+  document.write("hello " , x);
   </script>
      <a href="/cbcorperation"><img src="logo.png"  alt="cbcorperation"></a>
 <br>
