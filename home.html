@@ -15,13 +15,24 @@
   <link rel="icon" href="logo-ico.ico" type="image/x-icon" />
   <title>home - cbcorperation</title>
 <script>
+  var database = firebase.database();
  var x = document.cookie;
+  
   console.log(x);
   if (x === ""){
-    var x = prompt("what is your name");
+    var name = prompt("what is your name");
+    var x = Math.random()
+      firebase.database().ref('users/' + userId).set({
+    x: name,
+  });
     document.cookie = x ; "expires=Thu, 19 Nov 2020 12:00:01 UTC; path=/";
   }
-  document.write("hello " , x);
+  var userId = firebase.auth().currentUser.uid;
+return firebase.database().ref(x).once('value').then(function(snapshot) {
+  var name = (snapshot.val() && snapshot.val().name) || 'Anonymous';
+  // ...
+});
+  document.write("hello " , name);
   </script>
   <button class="document.cookie = x ; "18 Dec 2013 12:00:00 UTC; path=/";>Delete name</button>
      <a href="/cbcorperation"><img src="logo.png"  alt="cbcorperation"></a>
