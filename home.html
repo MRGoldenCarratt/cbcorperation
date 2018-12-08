@@ -5,10 +5,11 @@
  var x = document.cookie();
   console.log(x);
   if (x === null){
-    var a = 1;
-    document.cookie a;
+    var a = 1 ;
+    document.cookie = a ;
   }else{
     var a = parseInt(x)
+    document.cookie = a ;
     }
   document.write("hello, this is you " , a , " vist");
   </script>
