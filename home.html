@@ -1,40 +1,19 @@
 <html>
-<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyATLpn8dFTqrkuWp7eeBoSZaa8SFMg9yWQ",
-    authDomain: "name-179b8.firebaseapp.com",
-    databaseURL: "https://name-179b8.firebaseio.com",
-    projectId: "name-179b8",
-    storageBucket: "name-179b8.appspot.com",
-    messagingSenderId: "525626592812"
-  };
-  firebase.initializeApp(config);
-</script>
   <link rel="icon" href="logo-ico.ico" type="image/x-icon" />
   <title>home - cbcorperation</title>
 <script>
   var database = firebase.database();
- var x = document.cookie;
+ var name = document.cookie;
   
-  console.log(x);
-  if (x === ""){
+  console.log(name);
+  if (name === ""){
     var name = prompt("what is your name");
-    var x = Math.random()
-      firebase.database().ref('users/' + userId).set({
-    x: name,
-  });
-    document.cookie = x ; "expires=Thu, 19 Nov 2020 12:00:01 UTC; path=/";
+
+    document.cookie = name ; "expires=Thu, 19 Nov 2020 12:00:01 UTC; path=/";
   }
-  var userId = firebase.auth().currentUser.uid;
-return firebase.database().ref(x).once('value').then(function(snapshot) {
-  var name = (snapshot.val() && snapshot.val().name) || 'Anonymous';
-  // ...
-});
+
   document.write("hello " , name);
   </script>
-  <button class="document.cookie = x ; "18 Dec 2013 12:00:00 UTC; path=/";>Delete name</button>
      <a href="/cbcorperation"><img src="logo.png"  alt="cbcorperation"></a>
 <br>
   <h4>our top producs:</h4><br>
