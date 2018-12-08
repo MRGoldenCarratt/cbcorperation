@@ -5,7 +5,7 @@
  var x = document.cookie;
   console.log(x);
   if (x === ""){
-    var x = promp("what is your name");
+    var x = prompt("what is your name");
     document.cookie = x ; "expires=Thu, 19 Nov 2020 12:00:01 UTC";
   }
   document.write("hello " , x);
