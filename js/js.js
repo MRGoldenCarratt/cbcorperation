@@ -1,4 +1,4 @@
-<script>
+
   var b = 0;
   var x = "";
  var a = document.cookie;
@@ -11,4 +11,3 @@ console.log("name set to " , name);
   }
 
   document.write("hello " , name);
-  </script>
